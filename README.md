@@ -1,5 +1,7 @@
 # Java Microbenchmarks
 
+[![](https://gitlab.com/SethFalco/java-microbenchmarks/badges/main/pipeline.svg)](https://gitlab.com/SethFalco/java-microbenchmarks)
+
 The motivation and structure of this repository is almost identical to my Node.js equivalent. Read the [README of Node.js Microbenchmarks](https://gitlab.com/SethFalco/nodejs-microbenchmarks) for context.
 
 ## Running Benchmarks
