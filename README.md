@@ -9,13 +9,13 @@ The motivation and structure of this repository is almost identical to my Node.j
 To see a list of microbenchmarks available, either:
 
 * Look in `src/jmh/fun/falco/microbenchmarks/`.
-* Or execute `./gradlew clean jmh` on its own, which will list them for you.
+* Or execute `./gradlew jmh` on its own, which will list them for you.
 
 
 Run the relevant benchmark with Gradle:
 
 ```sh
-./gradlew clean jmh -P benchmark=CssToJavaColor
+./gradlew jmh --rerun -P benchmark=CssToJavaColor
 ```
 
 ## Related
