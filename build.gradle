@@ -59,6 +59,10 @@ jmh {
 }
 
 def getBenchmarkName() {
+    if (!project.gradle.startParameter.taskNames.contains("jmh")) {
+        return;
+    }
+
     if (!project.hasProperty("benchmark")) {
         def namespace = project.group.replace('.', File.separator);
         def path = [
