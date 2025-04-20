@@ -17,3 +17,9 @@ Run the relevant benchmark with Gradle:
 ```sh
 ./gradlew clean jmh -P benchmark=CssToJavaColor
 ```
+
+## Related
+
+I've made a similar repository for Node.js microbenchmarks:
+
+* [Node.js Microbenchmarks](https://gitlab.com/SethFalco/nodejs-microbenchmarks)
