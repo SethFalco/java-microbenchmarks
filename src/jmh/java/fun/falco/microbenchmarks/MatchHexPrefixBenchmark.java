@@ -22,8 +22,8 @@ public class MatchHexPrefixBenchmark {
     }
 
     @Benchmark
-    public void lowercasePrefix(final Blackhole blackhole) {
-        blackhole.consume(Arrays.stream(DATA).map(MatchHexPrefix::lowercasePrefix).toArray());
+    public void prefixEquals(final Blackhole blackhole) {
+        blackhole.consume(Arrays.stream(DATA).map(MatchHexPrefix::prefixEquals).toArray());
     }
 
     @Benchmark

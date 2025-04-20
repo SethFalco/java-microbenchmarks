@@ -15,7 +15,7 @@ public class MatchHexPrefixTest {
     public MatchHexPrefixTest() throws Exception {
         methods = new Method[] {
             MatchHexPrefix.class.getDeclaredMethod("lowercaseString", String.class),
-            MatchHexPrefix.class.getDeclaredMethod("lowercasePrefix", String.class),
+            MatchHexPrefix.class.getDeclaredMethod("prefixEquals", String.class),
             MatchHexPrefix.class.getDeclaredMethod("regex", String.class)
         };
     }
