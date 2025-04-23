@@ -79,7 +79,7 @@ def getBenchmarkName() {
             filePath -> benchmarks << filePath.name.replace("Benchmark.java", "");
         }
 
-        throw new GradleException("Must specify one of the following benchmarks to run:\n\n* " + String.join("\n* ", benchmarks) + "\n\nFor example: ./gradlew clean jmh -P benchmark=" + benchmarks[0]);
+        throw new GradleException("Must specify one of the following benchmarks to run:\n\n* " + String.join("\n* ", benchmarks) + "\n\nFor example: ./gradlew clean jmh -Pbenchmark=" + benchmarks[0]);
     }
 
     return project.property("benchmark");

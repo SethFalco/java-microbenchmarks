@@ -15,7 +15,7 @@ To see a list of microbenchmarks available, either:
 Run the relevant benchmark with Gradle:
 
 ```sh
-./gradlew jmh --rerun -P benchmark=CssToJavaColor
+./gradlew jmh --rerun -Pbenchmark=CssToJavaColor
 ```
 
 ## Related
