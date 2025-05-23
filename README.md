@@ -20,6 +20,6 @@ Run the relevant benchmark with Gradle:
 
 ## Related
 
-I've made a similar repository for Node.js microbenchmarks:
+I've written a similar repository for Node.js microbenchmarks:
 
 * [Node.js Microbenchmarks](https://gitlab.com/SethFalco/nodejs-microbenchmarks)
