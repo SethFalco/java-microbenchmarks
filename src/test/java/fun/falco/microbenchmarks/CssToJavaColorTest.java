@@ -23,12 +23,14 @@ public class CssToJavaColorTest {
     @Test
     public void colorWithAlphaChannel() {
         final Color expected = new Color(255, 255, 255, 255);
-        assertAll(TestUtils.toJunitExecutables(methods, "#FFFFFFFF", expected));
+        final var args = new Object[] {"#FFFFFFFF"};
+        assertAll(TestUtils.toJunitExecutables(methods, args, expected));
     }
 
     @Test
     public void cssColorShorthand() {
         final var expected = new Color(255, 255, 255);
-        assertAll(TestUtils.toJunitExecutables(methods, "#FFF", expected));
+        final var args = new Object[] {"#FFF"};
+        assertAll(TestUtils.toJunitExecutables(methods, args, expected));
     }
 }
