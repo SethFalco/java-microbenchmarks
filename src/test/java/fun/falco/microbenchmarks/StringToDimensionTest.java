@@ -23,12 +23,14 @@ public class StringToDimensionTest {
     @Test
     public void square() {
         final Dimension expected = new Dimension(512, 512);
-        assertAll(TestUtils.toJunitExecutables(methods, "512", expected));
+        final var args = new Object[] { "512" };
+        assertAll(TestUtils.toJunitExecutables(methods, args, expected));
     }
 
     @Test
     public void rectangle() {
         final Dimension expected = new Dimension(1920, 1080);
-        assertAll(TestUtils.toJunitExecutables(methods, "1920x1080", expected));
+        final var args = new Object[] { "1920x1080" };
+        assertAll(TestUtils.toJunitExecutables(methods, args, expected));
     }
 }

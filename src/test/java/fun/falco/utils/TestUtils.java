@@ -22,11 +22,11 @@ public class TestUtils {
      * yields identical results.
      *
      * @param methods Methods to invoke.
-     * @param input Parameter to pass to each invocation of an method.
+     * @param input Parameters to pass to each invocation of an method.
      * @param expected Expected result of the JUnit assertion.
      * @return Executables that can be passed to {@link Assertions#assertAll}.
      */
-    public static Executable[] toJunitExecutables(Method[] methods, Object input, Object expected) {
+    public static Executable[] toJunitExecutables(Method[] methods, Object[] input, Object expected) {
         return Stream.of(methods).map(m -> {
             return new Executable() {
                 public void execute() throws Exception {
