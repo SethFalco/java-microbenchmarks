@@ -24,13 +24,13 @@ public class StringToDimensionTest {
     void square() {
         final Dimension expected = new Dimension(512, 512);
         final var args = new Object[] {"512"};
-        assertAll(TestUtils.toJunitExecutables(methods, args, expected));
+        assertAll(TestUtils.toEqualsExecutables(methods, args, expected));
     }
 
     @Test
     void rectangle() {
         final Dimension expected = new Dimension(1920, 1080);
         final var args = new Object[] {"1920x1080"};
-        assertAll(TestUtils.toJunitExecutables(methods, args, expected));
+        assertAll(TestUtils.toEqualsExecutables(methods, args, expected));
     }
 }
