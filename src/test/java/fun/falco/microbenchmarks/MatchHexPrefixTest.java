@@ -22,16 +22,19 @@ public class MatchHexPrefixTest {
 
     @Test
     public void poundSign() {
-        assertAll(TestUtils.toJunitExecutables(methods, "0xa3", true));
+        final var args = new Object[] {"0xa3"};
+        assertAll(TestUtils.toJunitExecutables(methods, args, true));
     }
 
     @Test
     public void uppercasePrefix() {
-        assertAll(TestUtils.toJunitExecutables(methods, "0Xa3", true));
+        final var args = new Object[] {"0Xa3"};
+        assertAll(TestUtils.toJunitExecutables(methods, args, true));
     }
 
     @Test
     public void notMatch() {
-        assertAll(TestUtils.toJunitExecutables(methods, "Hello, World!", false));
+        final var args = new Object[] {"Hello, World!"};
+        assertAll(TestUtils.toJunitExecutables(methods, args, false));
     }
 }
